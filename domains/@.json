@@ -1,8 +1,8 @@
 {
-    "description": "The root domain for is-a.dev website",
+    "description": "Should show not authorized",
     "repo": "https://github.com/is-a-dev/is-a-dev.github.io",
     "owner": {
-        "username": "phenax",
+        "username": "VaibhavSys",
         "email": "phenax5@gmail.com"
     },
     "record": {

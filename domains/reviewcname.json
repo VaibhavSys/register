@@ -1,9 +1,10 @@
 {
+    "description": "Testing",
     "owner": {
         "username": "VaibhavSys",
         "email": "vaibhavsys@protonmail.com"
     },
     "record": {
-        "URL": "https://example.com"
+        "CNAME": "example.com"
     }
 }
