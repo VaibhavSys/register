@@ -10,9 +10,13 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
           persist-credentials: false
           fetch-depth: 0
+      - id: files
+        uses: jitterbit/get-changed-files@v1
+        with:
+          format: 'space-delimited'
       - uses: phoenixorigin/id_script@v0.1
         with:
-          files: ${{ steps.abc.outputs.all }}
+          files: ${{ steps.files.outputs.all }}
       - uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
