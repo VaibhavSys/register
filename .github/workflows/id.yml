@@ -19,9 +19,9 @@ jobs:
           files: ${{ steps.files.outputs.all }}
       - run: echo ${{ steps.files.outputs.all }} 
       - name: Commit
-              run: |
-                  git config --local user.email "actions@github.com"
-                  git config --local user.name "GitHub Actions"
-                  git add website/rss.xml
-                  git commit -m "update domains"
-                  git push
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add website/rss.xml
+          git commit -m "update domains"
+          git push
