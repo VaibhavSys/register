@@ -14,7 +14,7 @@ jobs:
         uses: jitterbit/get-changed-files@v1
         with:
           format: 'space-delimited'
-      - uses: phoenixorigin/id_script@v0.1.15
+      - uses: phoenixorigin/id_script@v0.1.16
         with:
           files: ${{ steps.files.outputs.all }}
       - run: echo ${{ steps.files.outputs.all }} 
