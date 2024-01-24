@@ -20,6 +20,8 @@ jobs:
       - run: echo ${{ steps.files.outputs.all }} 
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_user_name: 'version_increaser'
-          commit_user_email: 'phoenixorigin171@gmail.com'
-          commit_message: 'increase version'
+          commit_user_name: 'Github ID Script'
+          commit_user_email: 'randomradnom@gmail.com'
+          commit_message: 'add user id'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
