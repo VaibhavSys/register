@@ -18,7 +18,8 @@ jobs:
         with:
           files: ${{ steps.files.outputs.all }}
       - run: echo ${{ steps.files.outputs.all }} 
-      - uses: ad-m/github-push-action@master
+      - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+          commit_user_name: 'version_increaser'
+          commit_user_email: 'phoenixorigin171@gmail.com'
+          commit_message: 'increase version'
