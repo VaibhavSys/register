@@ -17,7 +17,7 @@ jobs:
       - uses: phoenixorigin/id_script@v0.1
         with:
           files: ${{ steps.files.outputs.all }}
-      - run: echo ${{ steps.files.outputs.all }}
+      - run: echo ${{ steps.files.outputs.all }} 
       - uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
